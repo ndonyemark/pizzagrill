@@ -12,5 +12,13 @@ $(document).ready(function(){
         var pizza_topping = $("select#topping option:selected").val();
         var pizza_crust = $("select#crust option:selected").val(); 
         var pizzas = $("input#no_of_pizza").val();
+
+        var pizzaInfo = function Pizza(size, topping, crust, pizzaNo){
+            this.size = size;
+            this.topping = topping;
+            this.crust = crust;
+            this.pizzaNo = pizzaNo;
+        }
+        
     });
 });
