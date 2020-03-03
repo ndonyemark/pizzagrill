@@ -19,6 +19,8 @@ $(document).ready(function(){
             this.crust = crust;
             this.pizzaNo = pizzaNo;
         }
-        
+
+        pizza1 = new pizzaInfo(pizza_size, pizza_topping, pizza_crust, pizzas);
+
     });
 });
