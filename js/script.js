@@ -64,5 +64,9 @@ $(document).ready(function(){
         {
             pizza_crust_price += 70;
         }
+
+        var price = (pizza_size_price + pizza_topping_price + pizza_crust_price);
+        var pizza_number = parseInt(pizza1.pizzaNo);
+        var total_cost = price * pizza_number;
     });
 });
