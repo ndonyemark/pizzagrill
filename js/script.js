@@ -70,5 +70,10 @@ $(document).ready(function () {
         $(".deliver").toggle();
         $(".cart").toggle();
     });
-   
+    $("button.checkout").click(function () {
+        $(".cart").toggle();
+        $(".location").toggle();
+    });
+
+    
 });
