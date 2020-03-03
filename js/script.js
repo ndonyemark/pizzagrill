@@ -73,5 +73,10 @@ $(document).ready(function(){
         $("tbody").append(tableData);
         var tableTotal = "<td colspan='1' id='total' class='text-light'>" + total_cost + "</td>";
         $("tfooter tr").append(tableTotal);
+
+        $("button.order").click(function(){
+            $(".cart").toggle();
+            $(".checkout").toggle();
+        })
     });
 });
