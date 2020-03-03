@@ -68,5 +68,10 @@ $(document).ready(function(){
         var price = (pizza_size_price + pizza_topping_price + pizza_crust_price);
         var pizza_number = parseInt(pizza1.pizzaNo);
         var total_cost = price * pizza_number;
+
+        var tableData = "<tr><td>" + pizza1.size + "</td><td>" + pizza_size_price + "</td><td>" + pizza1.topping + "</td><td>" + pizza_topping_price + "</td><td>" + pizza1.crust + "</td><td>" + pizza_crust_price + "</td></tr>";
+        $("tbody").append(tableData);
+        var tableTotal = "<td colspan='1' id='total' class='text-light'>" + total_cost + "</td>";
+        $("tfooter tr").append(tableTotal);
     });
 });
