@@ -51,7 +51,46 @@
         </nav>
 
         <div class="home">
-            
+            <div class="order-type p-5">
+                <h1 class="text-light">Welcome For The Best Sicilian Pizza</h1>
+                <h2 class="text-light">How would you like to recieve your pizza</h2>
+                <button class="deliver-method btn btn-danger btn-lg btn-block">Delivered</button>
+                <!-- <button class="takeaway-method btn btn-danger btn-lg">takeaway</button> -->
+            </div>
+        
+            <div class="deliver mb-5 p-5">
+                <h1 class="text-light">ORDER</h1>
+            <form action="">
+                <select name="" id="size" class="form-control mb-3">
+                    <option id="size-value" value="Enter you pizza size" class="form-control">Enter you pizza size</option>
+                    <option id="size-value" value="large">large</option>
+                    <option id="size-value" value="medium">medium</option>
+                    <option id="size-value" value="small">small</option>
+                </select>
+                <select name="" id="topping" class="form-control mb-3">
+                    <option value="toppings">toppings</option>
+                    <option value="ham">ham</option>
+                    <option value="BBQ-chicken">BBQ-chicken</option>
+                    <option value="bacon">bacon</option>
+                    <option value="beef">beef</option>
+                    <option value="blue-cheese">blue-cheese</option>
+                    <option value="brie">brie</option>
+                    <option value="manchengo">manchengo</option>
+                    <option value="parmessan">parmessan</option>
+                    <option value="carrots">carrots</option>
+                    <option value="tomatoes">tomatoes</option>
+                    <option value="peas">peas</option>
+                    <option value="olives">olives</option>
+                </select>
+                <select name="" id="crust" class="form-control mb-3">
+                    <option value="">Choose your kind of crust</option>
+                    <option value="crispy">crispy</option>
+                    <option value="stuffed">stuffed</option>
+                    <option value="gluten-free">gluten-free</option>
+                </select>
+                <input type="number" id="no_of_pizza" placeholder='how many pizzas would you like?' class="form-control mb-3">
+                <button type="submit" class="order btn btn-lg btn-danger btn-block">Order</button>
+            </form>
             </div>
 
 </body>
