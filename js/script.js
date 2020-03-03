@@ -22,5 +22,10 @@ $(document).ready(function(){
 
         pizza1 = new pizzaInfo(pizza_size, pizza_topping, pizza_crust, pizzas);
 
+        var pizza_size_price = 0;
+        var pizza_topping_price = 0;
+        var pizza_crust_price = 0;
+
+        
     });
 });
