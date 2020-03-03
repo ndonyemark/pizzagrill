@@ -7,3 +7,11 @@ body{
     font-family: tangerine;
     font-size: 40px;
 }
+
+.home{
+    background: url("../imgs/portfolio/portpizza8.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
