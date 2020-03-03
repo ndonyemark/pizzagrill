@@ -5,4 +5,7 @@ $(document).ready(function(){
         $(".order-type").toggle();
         $(".deliver").toggle();
     });
+    $(".deliver form").submit(function(event){
+        event.preventDefault();
+    });
 });
