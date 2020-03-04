@@ -66,6 +66,7 @@ $(document).ready(function () {
         var tableTotal = "<tr><td colspan ='5' class='text-light'>" + totalId + "</td><td class='text-light'>" + total_cost + "</td></tr>";
         $("tfoot").append(tableTotal);
     });
+
     $("button.order").click(function () {
         $(".deliver").toggle();
         $(".cart").toggle();
@@ -75,8 +76,17 @@ $(document).ready(function () {
         $(".location").toggle();
     });
 
-    $("button.delivery-location").click(function () {
+    $("button.location-confirmation").click(function () {
         $(".location").toggle();
+        $(".message").toggle();
+    });
+
+    $("#thankyou").click(function () {
+        $(".message").toggle();
         $(".order-type").toggle();
     });
+
+    var message = 'Thankyou Your order will be delivered to your location shortly';
+    $(".message-item").append(message);
+
 });
